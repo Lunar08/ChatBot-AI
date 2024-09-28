@@ -14,16 +14,21 @@ st.set_page_config(
     page_icon=":brain:",  # Favicon emoji
     layout="centered",  # Page layout option
 )
+
 st.markdown(
     """
     <style>
-    .css-1d391kg {
-        background: #f0f0f0;  /* Change this to your desired background color */
+    .streamlit-expanderHeader {
+        background-color: #f0f0f0;
+    }
+    .stApp {
+        background-color: #f0f0f0; /* Main app background */
     }
     </style>
     """,
     unsafe_allow_html=True
 )
+
 
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 
