@@ -14,7 +14,16 @@ st.set_page_config(
     page_icon=":brain:",  # Favicon emoji
     layout="centered",  # Page layout option
 )
-
+st.markdown(
+    """
+    <style>
+    .reportview-container {
+        background: #f0f0f0;  /* Change this to your desired background color */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 
 # Set up Google Gemini-Pro AI model
